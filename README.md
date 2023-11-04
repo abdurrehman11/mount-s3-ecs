@@ -34,3 +34,9 @@ We will follow the following steps to mount S3 bucket into ECS container:
     - mount-s3 s3fstest-bucket101 /home/mnt
 
 - Now you have successfully mounted s3 into your container `/home/mnt` working directory and you can view the contents of you s3 bucket inside the container using `ls -la`
+
+### References
+- https://github.com/s3fs-fuse/s3fs-fuse (follow this for s3 mount)
+- https://github.com/awslabs/mountpoint-s3/blob/main/docker/README.md
+- https://github.com/awslabs/mountpoint-s3/blob/main/docker/README.md
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html
